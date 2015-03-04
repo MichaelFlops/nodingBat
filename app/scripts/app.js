@@ -110,19 +110,21 @@ angular
 //Except if the parameter "negative" is True, then return True only if 
 //both are negative.
 
-var posNeg = function(a, b, negative) {
-  if (negative === true) {
-    if (a < 0 && b < 0){
-      return true;
-    }
-  }
-  if ((a < 0 && b > 0) || (a > 0 && b < 0)){
-    return true;
-  }
-};
-console.log(posNeg(1, -1, false));
-console.log(posNeg(-1, 1, false));
-console.log(posNeg(-4, -5, true));
+// var posNeg = function(a, b, negative) {
+//   if (negative === true) {
+//     if (a < 0 && b < 0){
+//       return true;
+//     }
+//   }
+//   if ((a < 0 && b > 0) || (a > 0 && b < 0)){
+//     return true;
+//   }
+// };
+// console.log(posNeg(1, -1, false));
+// console.log(posNeg(-1, 1, false));
+// console.log(posNeg(-4, -5, true));
+
+
 
 
 
