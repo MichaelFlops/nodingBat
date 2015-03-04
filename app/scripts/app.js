@@ -76,9 +76,53 @@ angular
 // console.log(intTener(9, 9));
 // console.log(intTener(1, 9));
 
+// Given an int n, return True if it is within 10 of 100 or 200. 
+//Note: abs(num) computes the absolute value of a number.
+// var nearHundred = function(n) {
+//   if (Math.abs(100) - n <= 10 || Math.abs(200) - n <= 10){
+//     return true;
+//   }
+//     return false;
+// };
+// console.log(nearHundred(93));
+// console.log(nearHundred(90));
+// console.log(nearHundred(89));
 
+//Given 2 int values, return True if one is negative and one is positive. 
+//Except if the parameter "negative" is True, then return True only if 
+//both are negative. 
 
+// var posNeg = function(a, b, negative) {
+//   if (negative === true) {
+//     return true;
+//   } 
+//   if ((a < 0 && b > 0) || a > 0 && b < 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// };
+// console.log(posNeg(1, -1, false));
+// console.log(posNeg(-1, 1, false));
+// console.log(posNeg(-4, -5, true));
 
+// Given 2 int values, return True if one is negative and one is positive. 
+//Except if the parameter "negative" is True, then return True only if 
+//both are negative.
+
+var posNeg = function(a, b, negative) {
+  if (negative === true) {
+    if (a < 0 && b < 0){
+      return true;
+    }
+  }
+  if ((a < 0 && b > 0) || (a > 0 && b < 0)){
+    return true;
+  }
+};
+console.log(posNeg(1, -1, false));
+console.log(posNeg(-1, 1, false));
+console.log(posNeg(-4, -5, true));
 
 
 
